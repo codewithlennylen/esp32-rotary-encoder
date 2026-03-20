@@ -2,6 +2,12 @@
 
 ### Description
 
+This project demonstrates how to interface a rotary encoder with an ESP32 (NodeMCU-32S) using PlatformIO. The code implements:
+-   **Rotational Tracking:** Uses interrupts on the CLK pin to detect movement and determine the direction of rotation (clockwise or anticlockwise).
+-   **Serial Feedback:** Outputs the current rotation count and direction to the Serial Monitor at 9600 baud.
+-   **Push Button Detection:** Monitors the integrated push button on the rotary encoder, reporting "Pressed" or "Released" states with basic debouncing.
+-   **Non-Blocking Logic:** The rotation detection is interrupt-driven for accuracy, while the main loop handles display and button state updates.
+
 
 ### Parts
 
